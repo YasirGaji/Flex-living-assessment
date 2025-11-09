@@ -1,0 +1,60 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: flex_living_db
+    restart: always
+    environment:
+      POSTGRES_USER: flexuser
+      POSTGRES_DB: flex_reviews
+      POSTGRES_PASSWORD: fl3xus3RAss355men8
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    networks:
+      - flex_network
+
+  # 2. Backend API Service (Fastify)
+  server:
+    container_name: flex_living_api
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: development
+      PORT: 3001
+      DATABASE_URL: "postgres://flexuser:fl3xus3RAss355men8@postgres:5433/flex_reviews"
+      HOSTAWAY_ACCOUNT_ID: 61148
+      HOSTAWAY_API_KEY: f94377ebbbb479490bb3ec364649168dc443dda2e4830facaf5de2e74ccc9152
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    depends_on:
+      - postgres
+    networks:
+      - flex_network
+
+  web:
+    container_name: flex_living_web
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: development
+      VITE_API_BASE_URL: http://localhost:3001
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    depends_on:
+      - server
+    networks:
+      - flex_network
+
+networks:
+  flex_network:
+    driver: bridge
+
+volumes:
+  postgres_data:

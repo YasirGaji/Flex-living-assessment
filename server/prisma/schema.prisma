@@ -1,0 +1,51 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Listing {
+  id               String     @id @default(uuid())
+  name             String     @unique 
+  reviews          Review[]
+  
+  averageRating    Float?
+  totalReviews     Int      @default(0)
+
+  createdAt        DateTime   @default(now())
+  updatedAt        DateTime   @updatedAt
+
+  @@map("listings")
+}
+
+model Review {
+  id            Int      @id 
+  externalId    String   @unique @default(uuid())
+  listingId     String
+  
+  channel       String   
+  reviewType    String  
+  
+  overallRating Float    
+  text          String?  @db.Text
+  guestName     String?
+
+  categoryRatings Json 
+
+  isApproved    Boolean  @default(false)
+  
+  submittedAt   DateTime
+
+  listing       Listing  @relation(fields: [listingId], references: [id])
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([listingId])
+  @@index([overallRating])
+  @@index([isApproved])
+  @@map("reviews")
+}

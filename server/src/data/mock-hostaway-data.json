@@ -1,0 +1,146 @@
+[
+  {
+    "id": 7453,
+    "type": "host-to-guest",
+    "status": "published",
+    "rating": null,
+    "publicReview": "Shane and family are wonderful! Would definitely host again :)",
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 10 },
+      { "category": "communication", "rating": 10 },
+      { "category": "respect_house_rules", "rating": 10 }
+    ],
+    "submittedAt": "2020-08-21 22:45:14",
+    "guestName": "Shane Finkelstein",
+    "listingName": "2B N1 A - 29 Shoreditch Heights"
+  },
+  {
+    "id": 7454,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 9,
+    "publicReview": "Great location, apartment was spacious and clean. The check-in process was a breeze. Only minor feedback: the Wi-Fi was a bit slow.",
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 9 },
+      { "category": "communication", "rating": 10 },
+      { "category": "value", "rating": 9 }
+    ],
+    "submittedAt": "2022-03-10 11:15:00",
+    "guestName": "Sarah Johnson",
+    "listingName": "4A S3 B - 12 Soho Grand Residence"
+  },
+  {
+    "id": 7455,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "publicReview": "The apartment was stylish, but the noise level from the street made sleeping difficult. Cleanliness in the bathroom could be improved. Disappointing given the price.",
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 5 },
+      { "category": "communication", "rating": 8 },
+      { "category": "location", "rating": 4 }
+    ],
+    "submittedAt": "2023-11-05 18:30:00",
+    "guestName": "Michael Chen",
+    "listingName": "2B N1 A - 29 Shoreditch Heights"
+  },
+  {
+    "id": 7456,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 10,
+    "publicReview": "Absolutely flawless stay. The Flex team was responsive and everything was perfect from arrival to departure.",
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 10 },
+      { "category": "communication", "rating": 10 },
+      { "category": "checkin", "rating": 10 }
+    ],
+    "submittedAt": "2024-01-20 09:00:00",
+    "guestName": "Aisha Khan",
+    "listingName": "7C L5 D - 45 West Side Lofts"
+  },
+  {
+    "id": 7457,
+    "type": "host-to-guest",
+    "status": "published",
+    "rating": null,
+    "publicReview": "The guest was respectful and left the apartment in pristine condition. Highly recommend hosting them again.",
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 10 },
+      { "category": "respect_house_rules", "rating": 10 }
+    ],
+    "submittedAt": "2024-02-14 15:00:00",
+    "guestName": "David Lee",
+    "listingName": "4A S3 B - 12 Soho Grand Residence"
+  },
+  {
+    "id": 7458,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 7,
+    "publicReview": "The kitchen was well-stocked, but several lightbulbs were out upon arrival. Fixed quickly by maintenance, but shouldn't happen.",
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 7 },
+      { "category": "maintenance", "rating": 6 }
+    ],
+    "submittedAt": "2024-04-01 10:45:00",
+    "guestName": "Emily Rodriguez",
+    "listingName": "7C L5 D - 45 West Side Lofts"
+  },
+  {
+    "id": 7459,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 10,
+    "publicReview": "Perfect stay, quiet building, fantastic views. True to the listing photos.",
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 10 },
+      { "category": "location", "rating": 10 }
+    ],
+    "submittedAt": "2024-05-15 17:20:00",
+    "guestName": "Tom Wilson",
+    "listingName": "2B N1 A - 29 Shoreditch Heights"
+  },
+  {
+    "id": 7460,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 8,
+    "publicReview": "The bed was comfortable, but the heat struggled to keep up on a cold night. Otherwise, a pleasant experience.",
+    "reviewCategory": [
+      { "category": "comfort", "rating": 7 },
+      { "category": "communication", "rating": 9 }
+    ],
+    "submittedAt": "2024-05-20 14:00:00",
+    "guestName": "Jessica Brown",
+    "listingName": "4A S3 B - 12 Soho Grand Residence"
+  },
+  {
+    "id": 7461,
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 6,
+    "publicReview": "The apartment smelled faintly of smoke when we arrived. Management apologized, but it impacted the beginning of our trip.",
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 4 },
+      { "category": "communication", "rating": 8 }
+    ],
+    "submittedAt": "2024-06-10 12:30:00",
+    "guestName": "Oliver Davis",
+    "listingName": "2B N1 A - 29 Shoreditch Heights"
+  },
+  {
+    "id": 7462,
+    "type": "guest-to-host",
+    "status": "pending",
+    "rating": 4,
+    "publicReview": "The key pickup instructions were wrong, and we were stuck outside for 45 minutes. Unacceptable service.",
+    "reviewCategory": [
+      { "category": "checkin", "rating": 1 },
+      { "category": "communication", "rating": 4 }
+    ],
+    "submittedAt": "2024-07-01 21:00:00",
+    "guestName": "Priya Sharma",
+    "listingName": "7C L5 D - 45 West Side Lofts"
+  }
+]
