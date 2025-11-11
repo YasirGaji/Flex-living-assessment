@@ -17,6 +17,7 @@ export interface NormalizedReview {
   id: number;
   externalId: string;
   listingId: string;
+  listingName: string;
   channel: 'Hostaway' | 'Google' | string;
   reviewType: string;
   overallRating: number;
