@@ -16,7 +16,6 @@ services:
     networks:
       - flex_network
 
-  # 2. Backend API Service (Fastify)
   server:
     container_name: flex_living_api
     build:
